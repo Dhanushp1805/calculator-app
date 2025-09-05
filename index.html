@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Calculator (HTML + CSS Design Only)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main
+      class="calculator"
+      role="application"
+      aria-label="Calculator (design only)"
+    >
+      <div class="header">
+        <div class="brand">
+          <div class="logo">C</div>
+          <div>
+            <h1>Simple Calculator</h1>
+            <p>HTML + CSS design and JavaScript</p>
+          </div>
+        </div>
+        <div style="font-size: 12px; color: var(--muted)">v1.0</div>
+      </div>
+
+      <!-- Display (static placeholders because no JS) -->
+      <section class="display" aria-live="polite">
+        <div class="prev">123 × 4</div>
+        <div class="current">492</div>
+      </section>
+
+      <!-- Keys (buttons are non-functional without JS) -->
+      <div class="keys" role="group" aria-label="Calculator buttons">
+        <button class="key op" aria-label="clear">C</button>
+        <button class="key op" aria-label="plus minus">±</button>
+        <button class="key op" aria-label="percent">%</button>
+        <button class="key op" aria-label="divide">÷</button>
+
+        <button class="key" aria-label="seven">7</button>
+        <button class="key" aria-label="eight">8</button>
+        <button class="key" aria-label="nine">9</button>
+        <button class="key op" aria-label="multiply">×</button>
+
+        <button class="key" aria-label="four">4</button>
+        <button class="key" aria-label="five">5</button>
+        <button class="key" aria-label="six">6</button>
+        <button class="key op" aria-label="minus">−</button>
+
+        <button class="key" aria-label="one">1</button>
+        <button class="key" aria-label="two">2</button>
+        <button class="key" aria-label="three">3</button>
+        <button class="key op" aria-label="plus">+</button>
+
+        <button class="key wide" aria-label="zero">0</button>
+        <button class="key" aria-label="dot">.</button>
+        <button class="key accent" aria-label="equals">=</button>
+      </div>
+
+      <p class="note">
+        This is a visual-only calculator design. Add JavaScript to make it
+        functional.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
